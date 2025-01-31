@@ -1,0 +1,104 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-container.only-sidebar .sidebar {
+  width: 100%; /* Sidebar takes full width when map is hidden */
+}
+
+.map-area {
+  width: 70%; /* Default map width when both are shown */
+  transition: width 0.3s ease;
+}
+
+.sidebar {
+  width: 30%; /* Default sidebar width */
+  transition: width 0.3s ease;
+}
+
+/* Buttons for toggling view */
+.view-toggle-icons {
+  display: flex;
+  justify-content: flex-end; /* Position to the right side of the page */
+  padding: 2px;
+  
+ 
+ 
+}
+
+
+
+/* General layout for the main container */
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.only-sidebar .map-area {
+  display: none; /* Hide the map visually in sidebar mode */
+}
+
+.hidden-map {
+  display: none; /* Completely hide the map but still keep it functional */
+}
+
+.map-area {
+  width: 70%; /* Map takes up 70% of the width */
+  height: 100vh; /* Full height of the viewport */
+}
+
+
+
+
+
+.toggle-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-button.active {
+  background-color: #0056b3;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 20px;
+ 
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Active state when the icon is selected */
+.icon-container.active {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Icon styles */
+.icon {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Change the icon color when active */
+.icon-container.active .icon {
+  color: #fff;
+}

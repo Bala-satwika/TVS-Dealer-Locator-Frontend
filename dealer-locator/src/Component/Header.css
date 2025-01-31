@@ -1,0 +1,48 @@
+.header-tvs {
+  background-color: #b2c1c8; /* TVS blue color */
+  display: flex;
+  justify-content: space-between; /* Align left and right content */
+  align-items: center; /* Vertically center the items */
+  padding: 10px 20px; /* Add padding to make the header look better */
+}
+
+.header-left-tvs {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.logo-tvs {
+  height: 50px; /* Adjust height as necessary */
+  margin-right: 20px; /* Space between logo and nav */
+}
+
+.header-right-tvs {
+  flex-grow: 1; /* Allow the right side to take available space */
+  display: flex;
+  justify-content: flex-end; /* Align the nav links to the right */
+}
+
+.navbar-tvs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item-tvs {
+  margin-right: 20px; /* Space between navbar items */
+}
+
+.navbar-item-tvs:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.navbar-link-tvs {
+  color: white; /* Change link color to white */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the links stand out */
+}
+
+.navbar-link-tvs:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

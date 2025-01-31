@@ -1,0 +1,111 @@
+.filter-section {
+  width: 90%; /* Ensure the filter section takes the full width of the sidebar */
+  padding: 20px;
+  background: #f9f9f9; /* Optional: Background color */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for elevation effect */
+}
+
+.filter-btn {
+  border-width: 10px;
+  border-color: #007BFF;
+  background-color: #bbd5ef; /* Example button color */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* Updated font */
+  font-size: 16px; /* Adjust as needed */
+  width: 100%; /* Full width for the filter button */
+  text-align: center; /* Center text */
+}
+
+.filter-popup {
+  position: absolute;
+  top: 50px; /* Adjust based on your layout */
+  left: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px; /* Padding around the popup */
+  z-index: 10;
+  width: 300px; /* Adjust width as needed */
+}
+
+.filter-options {
+  margin-bottom: 20px; /* Space below checkbox options */
+}
+
+.filter-options label {
+  font-family: 'Poppins', sans-serif; /* Font for checkbox text */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex; /* Flexbox for aligning checkbox with text */
+  align-items: center; /* Center vertically */
+}
+
+.filter-options input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and text */
+  font-family: 'icomoon' !important; /* Icon font for checkbox */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering */
+}
+
+/* Clear filter text styling */
+.clear-filters-text {
+  font-family: 'Poppins', sans-serif; /* Font for clear filter text */
+  font-size: 16px;
+  color: #007BFF; /* Example color for clear filter */
+  cursor: pointer; /* Pointer cursor for interaction */
+  text-align: center; /* Center text */
+}
+
+/* Apply filters button styling */
+.apply-filters-btn {
+  background-color: #28A745; /* Example apply button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* Updated font */
+  font-size: 20px; /* Font size for the button */
+  width: 100%; /* Full width */
+  margin-top: 10px; /* Space above button */
+}
+
+.selected-filters {
+  margin-top: 15px; /* Space above selected filters */
+}
+
+.filter-item {
+  display: inline-block; /* Display filters inline */
+  padding: 2px 10px; /* Padding for each filter */
+  margin-right: 10px; /* Space between filters */
+  background-color: #55a477; /* Green background for each filter */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners for filters */
+  font-size: 1em; /* Adjust text size */
+}
+.selected-filters {
+  margin-top: 5px; /* Space above the selected filters */
+   
+}
+/* Ensure the label remains black and doesn't turn red */
+.MuiFormControlLabel-label {
+  color: black; /* Set the label color explicitly */
+}
+
+.MuiFormControlLabel-label.Mui-checked {
+  color: black; /* Even when checked, keep the label black */
+}
+
+/* Optional: Style the checkbox itself */
+.MuiCheckbox-root {
+  color: black; /* Ensure checkbox remains the same color */
+}
+
+.MuiCheckbox-root.Mui-checked {
+  color: black; /* Ensure checked checkbox remains black */
+}

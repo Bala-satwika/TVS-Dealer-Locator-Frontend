@@ -1,0 +1,69 @@
+/* TestRideList.css */
+.test-ride-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .test-ride-card {
+    display: flex;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .test-ride-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Info section for details */
+  .test-ride-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; /* Ensure info section takes the remaining space */
+  }
+  
+  /* Image on the right side */
+  .test-ride-image {
+  
+    border-left: 1px solid #ddd; /* Add left border for separation */
+    border-radius: 0 8px 8px 0; /* Rounded corners on the right */
+  }
+  
+  .test-ride-image img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: 100%; /* Ensure it fits the container */
+    object-fit: cover; /* Ensure proper aspect ratio */
+    border-radius: 0 8px 8px 0; /* Rounded corners */
+  }
+  
+  .test-ride-info h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .test-ride-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .test-ride-info p svg {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  .test-ride-date {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    text-align: left; /* Align date to the left */
+  }
+  

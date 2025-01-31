@@ -1,0 +1,100 @@
+#orders-container {
+  margin-top: 20px;
+  max-height: 500px; /* Scrollable container */
+  overflow-y: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#orders-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item {
+  background-color: #f9f9f9; /* Light off-white background */
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+.order-item:hover {
+  background-color: #ffffff; /* Pure white on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+
+#order-card {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Soft inset shadow for depth */
+}
+
+#items-section {
+  margin-top: 15px;
+  background-color: #fcfcfc; /* Slightly off-white for items section */
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #eaeaea; /* Light gray border */
+}
+
+#items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#item {
+  padding: 10px;
+  background-color: #f5f5f5; /* Very light gray background for items */
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #dddddd;
+}
+
+#item:hover {
+  background-color: #ffffff; /* Pure white on hover */
+}
+
+.details-btn {
+  background-color: #f0f0f0; /* Light gray button background */
+  color: #333; /* Dark text for readability */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.details-btn:hover {
+  background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+#orders-title {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #1a202c; /* Darker text for title */
+}
+
+p {
+  color: #4a5568; /* Darker text for message */
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dddddd; /* Light gray scrollbar */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bbbbbb; /* Darker gray on hover */
+}

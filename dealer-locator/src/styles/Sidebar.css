@@ -1,0 +1,25 @@
+.search-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .search-section input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Leave space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Current location icon styling */
+  .current-location-icon {
+    position: absolute;
+    right: 10px; /* Place it on the right edge of the input */
+    cursor: pointer;
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+  }
+  

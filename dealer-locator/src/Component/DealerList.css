@@ -1,0 +1,74 @@
+/* Dealer List Table Styling */
+.dealer-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.dealer-table th,
+.dealer-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap; /* Prevent text from wrapping to ensure more compact table */
+}
+
+.dealer-table th {
+  background-color: #247220;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.dealer-table tbody tr:hover {
+  background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* View Toggle Button Styling */
+.view-toggle-button {
+  margin-left: 20px;
+  padding: 10px 15px; /* Reduced padding for a sleeker look */
+  background-color: #5A9BD5; /* A softer blue color */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Increased font size for better readability */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+.view-toggle-button:hover {
+  background-color: #4A8FC0; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.view-toggle-button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+/* Dealer List Container Styling */
+.dealer-list {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  max-height: 400px; /* Set a maximum height to ensure scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px; /* Optional padding for aesthetics */
+}
+
+/* Dealer Count Container */
+.dealer-count-container {
+  position: sticky; /* Keeps it static when scrolling */
+  top: 0;
+  background-color: #fff; /* White background to make it stand out */
+  z-index: 1000; /* Ensures it stays above other elements */
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dealer-count {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+}

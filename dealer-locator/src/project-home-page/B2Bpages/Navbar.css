@@ -1,0 +1,31 @@
+#navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+}
+#logo-container {
+    margin-right: 20px; /* Space between logo and navbar links */
+}
+#tvs-logo {
+    height: 50px; /* Decrease height for better fit */
+    width: 100px; /* Maintain aspect ratio */
+}
+#navbar-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#navbar-item {
+    margin: 0 10px;
+}
+#navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#navbar-link:hover {
+    text-decoration: underline;
+}

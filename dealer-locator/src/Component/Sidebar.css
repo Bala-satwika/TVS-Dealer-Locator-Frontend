@@ -1,0 +1,56 @@
+/* General sidebar styling */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #f1f1f1;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box; /* Ensure padding and border are included in width/height calculations */
+}
+
+/* Sidebar for viewMode 'both' */
+.both-sidebar {
+  width: 40%; /* Sidebar takes 30% of the screen when viewMode is 'both' */
+  flex-shrink: 0; /* Prevent the sidebar from shrinking */
+  max-width: 40%; /* Ensure that it doesn't shrink below 30% */
+}
+
+/* Make all components inside sidebar (including dealer list) take full width */
+.filter-container,
+.dealer-list-right {
+  width: 100%; /* Ensure all components inside the sidebar take full width */
+}
+
+.dealer-list-right {
+  padding-left: 20px; /* Remove padding for full width appearance */
+}
+
+.radius-slider {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.only-sidebar .sidebar {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

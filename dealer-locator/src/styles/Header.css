@@ -1,0 +1,97 @@
+.header {
+    background-color: hwb(0 96% 4%) !important; /* Forcing white background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #003366; /* Dark blue text color to match TVS Motor theme */
+    position: relative;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px; /* Adjust this to match the correct size for the logo */
+    width: 120px; /* Maintain aspect ratio */
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: #003366; /* Dark blue color for the links */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown-icon {
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .list-icon {
+    width: 24px; /* Adjust size of the dropdown list icon */
+    height: 24px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #003366; /* Dark blue for dropdown text */
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better contrast */
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .dropdown-column {
+    margin: 0 20px;
+  }
+  
+  .dropdown-column h3 {
+    margin-bottom: 10px;
+    color: #003366; /* Theme color for heading */
+  }
+  
+  .dropdown-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dropdown-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-column ul li a {
+    color: #003366; /* Theme color for links */
+    text-decoration: none;
+  }
+  
+  .dropdown-column ul li a:hover {
+    text-decoration: underline;
+  }
+  

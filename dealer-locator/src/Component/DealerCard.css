@@ -1,0 +1,84 @@
+/* Dealer card styling */
+.dealer-card-unique {
+  background-color: #f8f9fa; /* Background color for the card */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  width: 100%; /* Full width within the dealer list */
+  margin: 10px 0; /* Space between cards */
+  padding: 10px 15px; /* Reduced padding inside the card (vertical and horizontal) */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Ensure content flows vertically */
+}
+
+/* Dealer info heading styling */
+.dealer-info-unique h3 {
+  font-size: 1.5em; /* Font size for dealer name */
+  color: #343a40; /* Dark text color */
+  margin-bottom: 5px; /* Space below heading */
+  text-align: left; /* Explicitly align heading to the left */
+  margin-left: 0; /* Remove any left margin */
+}
+
+/* Dealer info paragraph styling */
+.dealer-info-unique p {
+  font-size: 0.9em; /* Font size for details */
+  color: #495057; /* Text color */
+  margin: 0; /* Remove margin to reduce gaps between paragraphs */
+  padding-left: 0; /* Remove any padding to the left */
+  text-align: left; /* Explicitly align text to the left */
+  line-height: 1.3; /* Set line height for readability */
+}
+
+/* Bold detail text styling */
+.dealer-detail-text-unique {
+  font-weight: bold;
+  margin-right: 5px;
+}
+/* Dealer actions container styling */
+/* Dealer actions container styling */
+.dealer-actions-unique {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif; /* Use a professional font like Roboto */
+  font-size: 0.95em;
+}
+
+/* Dealer action links styling (black underline, arrow, not for directions) */
+.dealer-actions-unique .dealer-action-link-unique {
+  margin-right: 15px;
+  font-size: 1em; /* Adjusting the size for a more professional look */
+  color: black;
+  text-decoration: underline; /* Always show underline */
+  display: flex;
+  align-items: center;
+}
+
+/* Remove underline hover effect (already underlined by default) */
+.dealer-action-link-unique:hover {
+  text-decoration: underline;
+}
+
+/* Keep the arrow beside the link text */
+.dealer-action-link-unique svg {
+  margin-left: 5px; /* Space between the text and the icon */
+  color: black; /* Set the arrow color to black */
+}
+
+/* Get Directions link styling (black color only) */
+.get-directions-link-unique {
+  margin-top: 10px;
+  font-size: 0.95em;
+  text-decoration: underline;
+ 
+  display: flex;
+  align-items: center;
+}
+
+/* Remove button-like padding and background color */
+.get-directions-link-unique svg {
+  margin-left: 5px;
+  color: black;
+}

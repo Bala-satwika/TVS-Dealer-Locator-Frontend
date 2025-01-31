@@ -1,0 +1,58 @@
+
+  
+  .imageContainer {
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    padding:2px 10px;
+    
+  }
+  
+  /* Scrollable image settings */
+  .scrollableImage {
+    width: 9000px; /* Set a wide width for the image */
+    height: 510px;
+    display: inline-block; /* Prevents image from wrapping */
+  }
+  
+  /* Custom scrollbar container */
+  .scrollbar {
+    width: 100%;
+    height: 2px; /* Adjust height for thin scrollbar */
+    background-color: #fc3306; /* Red color for scrollbar track */
+    margin-top: 10px;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  /* TVS horse image as the scroll indicator */
+  .scrollIndicator {
+    width: 50px; /* Width of the indicator */
+    height: 30px; /* Height of the indicator */
+    background-image: url('https://th.bing.com/th/id/R.2c1dfb769903eaf7ee2603bb27de2c9f?rik=HAr6Fds9LTjx0w&riu=http%3a%2f%2fgoodlogo.com%2fimages%2flogos%2fsmall%2ftvs_motor_company_logo_3462.gif&ehk=eEIMdNXEKB1Wz3nkePC4asCpJMiiG5y1i7aDqRXFidI%3d&risl=&pid=ImgRaw&r=0');
+    background-size: contain; /* Ensure the image fits properly */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: -12px; /* Position it above the scrollbar */
+    border-radius: 100%;
+    transition: left 0.2s ease; /* Smooth transition for scrolling */
+  }
+  
+h1{
+    text-align: center;
+}
+  p {
+    font-size: 20px; /* Set a reasonable font size */
+    text-align: center;
+    font-family:Roboto;
+    font-weight: 400;
+    padding: 10px 60px;
+    line-height: 30px; /* Increase line height for better readability */
+   
+}
+  /* Hide the default scrollbar */
+  .imageContainer::-webkit-scrollbar {
+    display: none;
+  }
+  

@@ -1,0 +1,94 @@
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #chart-select {
+    min-width: 200px;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  #select-dropdown {
+    background-color: #e0f7fa;
+    color: #036ab8;
+  }
+  
+  #select-dropdown:hover {
+    background-color: #b3e5fc;
+    border-color: #0288d1;
+  }
+  
+  .MuiSelect-select.MuiSelect-outlined.MuiInputBase-input {
+    padding: 12px;
+  }
+  
+  .MuiInputLabel-outlined {
+    color: #0288d1;
+   
+
+  }
+  
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #0288d1;
+  }
+  
+  .MuiOutlinedInput-notchedOutline {
+    border-color: #81d4fa;
+  }
+  
+  .MuiMenuItem-root {
+    padding: 10px;
+  }
+  
+  .MuiMenuItem-root:hover {
+    background-color: #81d4fa;
+    color: #004d82;
+  }
+  
+  #h2, #h3 {
+    color: black;
+    padding-left: 20px;
+  }
+  
+  #h2 {
+    font-size: 1.8rem;
+    
+  }
+  
+  #h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  #ul, #li {
+    list-style: none;
+  }
+  
+  #chart {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #chart-select {
+    min-width: 200px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #0288d1; /* Sky blue border to match theme */
+  }
+  #chart-select-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px; /* Space between label and dropdown */
+    width: 100%; /* Adjust width to prevent overflow */
+  }
+  #chart-select-label {
+    font-size: 1.2rem; /* Larger font size for the label */
+    color: #0288d1; /* Sky blue color */
+    margin-bottom: 8px; /* Add spacing between label and dropdown */
+  }

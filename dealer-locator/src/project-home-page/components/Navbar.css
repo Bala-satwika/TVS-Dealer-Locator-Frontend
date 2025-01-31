@@ -1,0 +1,24 @@
+.tvsNavbarContainer {
+    background-color: white; /* White background */
+    border-radius: 4.4em; /* Rounded edges */
+    padding: 1rem; /* Even padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Logo styling */
+.tvsNavbarLogo {
+    height: 20px; /* Adjust as needed */
+}
+
+/* Navbar links and dropdown items styling */
+.tvsNavbarNav .tvsNavLink {
+    color: #333; /* Dark color for links */
+}
+
+.tvsNavbarNav .tvsNavLink:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.tvsDropdownMenu {
+    border-radius: 1.4em; /* Rounded edges for dropdown */
+}
