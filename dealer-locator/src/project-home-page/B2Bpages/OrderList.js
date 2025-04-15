@@ -51,7 +51,7 @@ const OrderList = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8010/api/dealers/orders?dealerId=${dealerId}`)
+      .get(`https://b2bdisplay-microservice.onrender.com/api/dealers/orders?dealerId=${dealerId}`)
       .then(response => setOrders(response.data))
       .catch(error => console.error('Error fetching orders:', error));
   }, [dealerId]);

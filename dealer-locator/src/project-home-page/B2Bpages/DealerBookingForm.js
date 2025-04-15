@@ -42,7 +42,7 @@ const DealerBookingForm = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:8010/api/dealers/states')
+    axios.get('https://b2bdisplay-microservice.onrender.com/api/dealers/states')
       .then(response => setStates(response.data))
       .catch(error => console.error('Error fetching states:', error));
   }, []);
@@ -50,7 +50,7 @@ const DealerBookingForm = () => {
   const handleFilterChange = useCallback(async () => {
     if (vehicle) {
       try {
-        const response = await axios.get('http://localhost:8010/api/dealers/filter', {
+        const response = await axios.get('https://b2bdisplay-microservice.onrender.com/api/dealers/filter', {
           params: { vehicle, state }
         });
         const sortedDealers = response.data.sort((a, b) => {

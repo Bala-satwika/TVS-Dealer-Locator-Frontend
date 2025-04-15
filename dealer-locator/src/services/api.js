@@ -3,7 +3,7 @@ import axios from 'axios';
 // Function to fetch dealers by stateId
 export const fetchDealers = async (stateId, jwtToken) => {
   try {
-    const response = await axios.get(`http://localhost:8088/dealers/${stateId}`, {
+    const response = await axios.get(`https://dealer-data-microservice.onrender.com/dealers/${stateId}`, {
       headers: {
         'Authorization': `Bearer ${jwtToken}`,
       },
@@ -18,12 +18,12 @@ export const fetchDealers = async (stateId, jwtToken) => {
 // Function to fetch orders by dealerId
 export const fetchOrders = async (dealerId, jwtToken) => {
   try {
-    const response = await axios.get(`http://localhost:8088/orders/${dealerId}`, {
+    const response = await axios.get(`https://dealer-data-microservice.onrender.com/orders/${dealerId}`, {
       headers: {
         'Authorization': `Bearer ${jwtToken}`,
       },
     });
-    console.log(response.data)
+    console.log("deployed url",response.data)
     return response.data;
     
   } catch (error) {
@@ -33,7 +33,7 @@ export const fetchOrders = async (dealerId, jwtToken) => {
 };
 
 export const fetchStateName = async (stateId) => {
-  const response = await fetch(`http://localhost:8088/dealers/stateName/${stateId}`);
+  const response = await fetch(`https://dealer-data-microservice.onrender.com/dealers/stateName/${stateId}`);
   if (!response.ok) {
     throw new Error('Error fetching state name');
   }
